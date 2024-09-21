@@ -1,0 +1,11 @@
+https://kafka.js.org/docs/
+
+https://gist.github.com/piyushgarg-dev/32cadf6420c452b66a9a6d977ade0b01
+
+
+first run 
+docker run -p 2181:2181 zookeeper
+
+run this comman docker 
+
+docker run -p 9092:9092 -e KAFKA_ZOOKEEPER_CONNECT=172.20.10.2:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://172.20.10.2:9092 -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 confluentinc/cp-kafka
